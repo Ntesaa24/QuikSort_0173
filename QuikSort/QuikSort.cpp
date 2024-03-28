@@ -103,7 +103,7 @@ void display() {
 }
 int main()
 {
-	char ch; 
+	char ch;
 
 	do {
 		input();
@@ -117,4 +117,7 @@ int main()
 		system("pause");
 		system("cls");
 
-	} while (true); 
+	} while (true);
+
+	return 0;
+} 
