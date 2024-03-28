@@ -4,7 +4,7 @@ using namespace std;
 //array off intergers to hold values 
 int arr[20]; 
 int cmp_count = 0; //number of comparasion
-int mov_cout = 0; // numberof data movements
+int mov_count = 0; // numberof data movements
 int n; 
 
 void input() {
@@ -34,7 +34,7 @@ void swap(int x, int y) {
 	int temp = arr[x]; 
 	arr[x] = arr[y]; 
 	arr[y] = temp; 
-	mov_cout++; 
+	mov_count++; 
 
 
 }
@@ -88,12 +88,18 @@ void q_short(int low, int high)
 
 
 void display() {
-	cout << "\n----------------" << endl; 
-	cout << "Sorted Array" << endl; 
-	cout << "------------------" << endl; 
+	cout << "\n----------------" << endl;
+	cout << "Sorted Array" << endl;
+	cout << "------------------" << endl;
 
 	for (int i = 0; i < n; i++)
 	{
-		cout << arr[i] << " "; 
+		cout << arr[i] << " ";
 	}
+
+	cout << "\n\nNumber of comparasions: " << cmp_count << endl;
+	cout << "Number of data movements: " << mov_count << endl;
+
 }
+int main()
+{
