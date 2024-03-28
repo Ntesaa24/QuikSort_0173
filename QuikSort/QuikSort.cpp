@@ -76,5 +76,9 @@ void q_short(int low, int high)
 		swap(low, j);
 	}
 	 
+	//recursive call to sort thr Left cub array 
+	q_short(low, j - 1); //step 12 
+
+	
 
 }
