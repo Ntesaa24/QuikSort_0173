@@ -45,7 +45,12 @@ void q_short(int low, int high)
 	int temp; 
 	int pivot, i, j; 
 	if (low > high) { //step 1
+		return;
 }
+
+	pivot = arr[low]; //step 2
+	
+
 
 
 
